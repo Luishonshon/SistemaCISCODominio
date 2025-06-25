@@ -1,3 +1,10 @@
+/home/luishonshon/BD Projects/ProyectosEscolares/SistemaCISCODominio/src/main/java/DTO/alumnos/BuscarAlumnoDTO.java
+/home/luishonshon/BD Projects/ProyectosEscolares/SistemaCISCODominio/src/main/java/DTO/alumnos/ConfirmarAlumnoDTO.java
+/home/luishonshon/BD Projects/ProyectosEscolares/SistemaCISCODominio/src/main/java/DTO/computadoras/ActualizarEstadoComputadoraDTO.java
+/home/luishonshon/BD Projects/ProyectosEscolares/SistemaCISCODominio/src/main/java/DTO/computadoras/FiltroComputadoraDTO.java
+/home/luishonshon/BD Projects/ProyectosEscolares/SistemaCISCODominio/src/main/java/DTO/reservas/FiltroReservaDTO.java
+/home/luishonshon/BD Projects/ProyectosEscolares/SistemaCISCODominio/src/main/java/DTO/reservas/GuardarReservaDTO.java
+/home/luishonshon/BD Projects/ProyectosEscolares/SistemaCISCODominio/src/main/java/DTO/software/FiltroSoftwareDTO.java
 /home/luishonshon/BD Projects/ProyectosEscolares/SistemaCISCODominio/src/main/java/Dominio/Alumno.java
 /home/luishonshon/BD Projects/ProyectosEscolares/SistemaCISCODominio/src/main/java/Dominio/Bloqueo.java
 /home/luishonshon/BD Projects/ProyectosEscolares/SistemaCISCODominio/src/main/java/Dominio/Carrera.java

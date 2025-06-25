@@ -26,6 +26,10 @@
 -version
 -windowtitle
 'SistemaCISCODominio 1.0-SNAPSHOT API'
+DTO.reservas
+DTO.alumnos
+DTO.computadoras
+DTO.software
 Dominio
 com.mycompany.sistemaciscodominio
 /home/luishonshon/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.core/2.7.12/org.eclipse.persistence.core-2.7.12.jar = 1676485815000
@@ -35,19 +39,19 @@ com.mycompany.sistemaciscodominio
 /home/luishonshon/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.jpa.jpql/2.7.12/org.eclipse.persistence.jpa.jpql-2.7.12.jar = 1676485746000
 /home/luishonshon/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.moxy/2.7.12/org.eclipse.persistence.moxy-2.7.12.jar = 1676485959000
 /home/luishonshon/.m2/repository/org/eclipse/persistence/jakarta.persistence/2.2.3/jakarta.persistence-2.2.3.jar = 1564761743000
-/home/luishonshon/BD Projects/ProyectosEscolares/SistemaCISCODominio/src/main/java = 1750826326169
-/home/luishonshon/BD Projects/ProyectosEscolares/SistemaCISCODominio/target/reports/apidocs/overview-tree.html = 1750826385489
-/home/luishonshon/BD Projects/ProyectosEscolares/SistemaCISCODominio/target/reports/apidocs/element-list = 1750826385426
-/home/luishonshon/BD Projects/ProyectosEscolares/SistemaCISCODominio/target/reports/apidocs/index-all.html = 1750826385525
-/home/luishonshon/BD Projects/ProyectosEscolares/SistemaCISCODominio/target/reports/apidocs/search.html = 1750826385526
-/home/luishonshon/BD Projects/ProyectosEscolares/SistemaCISCODominio/target/reports/apidocs/tag-search-index.js = 1750826385509
-/home/luishonshon/BD Projects/ProyectosEscolares/SistemaCISCODominio/target/reports/apidocs/allclasses-index.html = 1750826385506
-/home/luishonshon/BD Projects/ProyectosEscolares/SistemaCISCODominio/target/reports/apidocs/member-search-index.js = 1750826385509
-/home/luishonshon/BD Projects/ProyectosEscolares/SistemaCISCODominio/target/reports/apidocs/allpackages-index.html = 1750826385508
-/home/luishonshon/BD Projects/ProyectosEscolares/SistemaCISCODominio/target/reports/apidocs/index.html = 1750826385490
-/home/luishonshon/BD Projects/ProyectosEscolares/SistemaCISCODominio/target/reports/apidocs/help-doc.html = 1750826385529
-/home/luishonshon/BD Projects/ProyectosEscolares/SistemaCISCODominio/target/reports/apidocs/module-search-index.js = 1750826385508
-/home/luishonshon/BD Projects/ProyectosEscolares/SistemaCISCODominio/target/reports/apidocs/package-search-index.js = 1750826385508
-/home/luishonshon/BD Projects/ProyectosEscolares/SistemaCISCODominio/target/reports/apidocs/overview-summary.html = 1750826385527
-/home/luishonshon/BD Projects/ProyectosEscolares/SistemaCISCODominio/target/reports/apidocs/type-search-index.js = 1750826385508
-/home/luishonshon/BD Projects/ProyectosEscolares/SistemaCISCODominio/target/reports/apidocs/serialized-form.html = 1750826385456
+/home/luishonshon/BD Projects/ProyectosEscolares/SistemaCISCODominio/src/main/java = 1750826626415
+/home/luishonshon/BD Projects/ProyectosEscolares/SistemaCISCODominio/target/reports/apidocs/overview-tree.html = 1750827034127
+/home/luishonshon/BD Projects/ProyectosEscolares/SistemaCISCODominio/target/reports/apidocs/element-list = 1750827034032
+/home/luishonshon/BD Projects/ProyectosEscolares/SistemaCISCODominio/target/reports/apidocs/index-all.html = 1750827034167
+/home/luishonshon/BD Projects/ProyectosEscolares/SistemaCISCODominio/target/reports/apidocs/search.html = 1750827034168
+/home/luishonshon/BD Projects/ProyectosEscolares/SistemaCISCODominio/target/reports/apidocs/tag-search-index.js = 1750827034147
+/home/luishonshon/BD Projects/ProyectosEscolares/SistemaCISCODominio/target/reports/apidocs/allclasses-index.html = 1750827034145
+/home/luishonshon/BD Projects/ProyectosEscolares/SistemaCISCODominio/target/reports/apidocs/member-search-index.js = 1750827034147
+/home/luishonshon/BD Projects/ProyectosEscolares/SistemaCISCODominio/target/reports/apidocs/allpackages-index.html = 1750827034146
+/home/luishonshon/BD Projects/ProyectosEscolares/SistemaCISCODominio/target/reports/apidocs/index.html = 1750827034129
+/home/luishonshon/BD Projects/ProyectosEscolares/SistemaCISCODominio/target/reports/apidocs/help-doc.html = 1750827034171
+/home/luishonshon/BD Projects/ProyectosEscolares/SistemaCISCODominio/target/reports/apidocs/module-search-index.js = 1750827034146
+/home/luishonshon/BD Projects/ProyectosEscolares/SistemaCISCODominio/target/reports/apidocs/package-search-index.js = 1750827034147
+/home/luishonshon/BD Projects/ProyectosEscolares/SistemaCISCODominio/target/reports/apidocs/overview-summary.html = 1750827034169
+/home/luishonshon/BD Projects/ProyectosEscolares/SistemaCISCODominio/target/reports/apidocs/type-search-index.js = 1750827034147
+/home/luishonshon/BD Projects/ProyectosEscolares/SistemaCISCODominio/target/reports/apidocs/serialized-form.html = 1750827034083
