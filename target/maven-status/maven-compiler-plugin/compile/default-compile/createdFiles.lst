@@ -1,0 +1,11 @@
+Dominio/Centro.class
+Dominio/Software.class
+Dominio/CentroRegla.class
+Dominio/Computadora.class
+com/mycompany/sistemaciscodominio/SistemaCISCODominio.class
+Dominio/Bloqueo.class
+Dominio/Carrera.class
+Dominio/Reservacion.class
+Dominio/Instalacion.class
+Dominio/Regla.class
+Dominio/Alumno.class
