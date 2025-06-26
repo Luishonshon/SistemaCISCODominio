@@ -1,18 +1,19 @@
-/home/luishonshon/BD Projects/ProyectosEscolares/SistemaCISCODominio/src/main/java/DTO/alumnos/BuscarAlumnoDTO.java
-/home/luishonshon/BD Projects/ProyectosEscolares/SistemaCISCODominio/src/main/java/DTO/alumnos/ConfirmarAlumnoDTO.java
-/home/luishonshon/BD Projects/ProyectosEscolares/SistemaCISCODominio/src/main/java/DTO/computadoras/ActualizarEstadoComputadoraDTO.java
-/home/luishonshon/BD Projects/ProyectosEscolares/SistemaCISCODominio/src/main/java/DTO/computadoras/FiltroComputadoraDTO.java
-/home/luishonshon/BD Projects/ProyectosEscolares/SistemaCISCODominio/src/main/java/DTO/reservas/FiltroReservaDTO.java
-/home/luishonshon/BD Projects/ProyectosEscolares/SistemaCISCODominio/src/main/java/DTO/reservas/GuardarReservaDTO.java
-/home/luishonshon/BD Projects/ProyectosEscolares/SistemaCISCODominio/src/main/java/DTO/software/FiltroSoftwareDTO.java
-/home/luishonshon/BD Projects/ProyectosEscolares/SistemaCISCODominio/src/main/java/Dominio/Alumno.java
-/home/luishonshon/BD Projects/ProyectosEscolares/SistemaCISCODominio/src/main/java/Dominio/Bloqueo.java
-/home/luishonshon/BD Projects/ProyectosEscolares/SistemaCISCODominio/src/main/java/Dominio/Carrera.java
-/home/luishonshon/BD Projects/ProyectosEscolares/SistemaCISCODominio/src/main/java/Dominio/Centro.java
-/home/luishonshon/BD Projects/ProyectosEscolares/SistemaCISCODominio/src/main/java/Dominio/CentroRegla.java
-/home/luishonshon/BD Projects/ProyectosEscolares/SistemaCISCODominio/src/main/java/Dominio/Computadora.java
-/home/luishonshon/BD Projects/ProyectosEscolares/SistemaCISCODominio/src/main/java/Dominio/Instalacion.java
-/home/luishonshon/BD Projects/ProyectosEscolares/SistemaCISCODominio/src/main/java/Dominio/Regla.java
-/home/luishonshon/BD Projects/ProyectosEscolares/SistemaCISCODominio/src/main/java/Dominio/Reservacion.java
-/home/luishonshon/BD Projects/ProyectosEscolares/SistemaCISCODominio/src/main/java/Dominio/Software.java
-/home/luishonshon/BD Projects/ProyectosEscolares/SistemaCISCODominio/src/main/java/com/mycompany/sistemaciscodominio/SistemaCISCODominio.java
+C:\Users\santi\Documents\GitHub\SistemaCISCODominio\src\main\java\Dominio\Alumno.java
+C:\Users\santi\Documents\GitHub\SistemaCISCODominio\src\main\java\Dominio\Bloqueo.java
+C:\Users\santi\Documents\GitHub\SistemaCISCODominio\src\main\java\Dominio\Carrera.java
+C:\Users\santi\Documents\GitHub\SistemaCISCODominio\src\main\java\Dominio\Centro.java
+C:\Users\santi\Documents\GitHub\SistemaCISCODominio\src\main\java\Dominio\CentroRegla.java
+C:\Users\santi\Documents\GitHub\SistemaCISCODominio\src\main\java\Dominio\Computadora.java
+C:\Users\santi\Documents\GitHub\SistemaCISCODominio\src\main\java\Dominio\Instalacion.java
+C:\Users\santi\Documents\GitHub\SistemaCISCODominio\src\main\java\Dominio\Regla.java
+C:\Users\santi\Documents\GitHub\SistemaCISCODominio\src\main\java\Dominio\Reservacion.java
+C:\Users\santi\Documents\GitHub\SistemaCISCODominio\src\main\java\Dominio\Software.java
+C:\Users\santi\Documents\GitHub\SistemaCISCODominio\src\main\java\DTO\alumnos\AgregarAlumnoDTO.java
+C:\Users\santi\Documents\GitHub\SistemaCISCODominio\src\main\java\DTO\alumnos\BuscarAlumnoDTO.java
+C:\Users\santi\Documents\GitHub\SistemaCISCODominio\src\main\java\DTO\alumnos\ConfirmarAlumnoDTO.java
+C:\Users\santi\Documents\GitHub\SistemaCISCODominio\src\main\java\DTO\centro\AgregarCentroDTO.java
+C:\Users\santi\Documents\GitHub\SistemaCISCODominio\src\main\java\DTO\computadoras\ActualizarEstadoComputadoraDTO.java
+C:\Users\santi\Documents\GitHub\SistemaCISCODominio\src\main\java\DTO\computadoras\FiltroComputadoraDTO.java
+C:\Users\santi\Documents\GitHub\SistemaCISCODominio\src\main\java\DTO\reservas\FiltroReservaDTO.java
+C:\Users\santi\Documents\GitHub\SistemaCISCODominio\src\main\java\DTO\reservas\GuardarReservaDTO.java
+C:\Users\santi\Documents\GitHub\SistemaCISCODominio\src\main\java\DTO\software\FiltroSoftwareDTO.java
