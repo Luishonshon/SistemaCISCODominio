@@ -41,7 +41,7 @@ public class Alumno implements Serializable {
     @Column(name = "estado",  nullable = false)
     private  boolean estado;
 
-    @ManyToOne(cascade = CascadeType.PERSIST)
+    @ManyToOne()
     @JoinColumn(name = "idCarrera")
     private Carrera carrera;
     
