@@ -2,7 +2,6 @@ C:\Users\santi\Documents\GitHub\SistemaCISCODominio\src\main\java\Dominio\Alumno
 C:\Users\santi\Documents\GitHub\SistemaCISCODominio\src\main\java\Dominio\Bloqueo.java
 C:\Users\santi\Documents\GitHub\SistemaCISCODominio\src\main\java\Dominio\Carrera.java
 C:\Users\santi\Documents\GitHub\SistemaCISCODominio\src\main\java\Dominio\Centro.java
-C:\Users\santi\Documents\GitHub\SistemaCISCODominio\src\main\java\Dominio\CentroRegla.java
 C:\Users\santi\Documents\GitHub\SistemaCISCODominio\src\main\java\Dominio\Computadora.java
 C:\Users\santi\Documents\GitHub\SistemaCISCODominio\src\main\java\Dominio\Instalacion.java
 C:\Users\santi\Documents\GitHub\SistemaCISCODominio\src\main\java\Dominio\Regla.java
@@ -15,10 +14,11 @@ C:\Users\santi\Documents\GitHub\SistemaCISCODominio\src\main\java\DTO\alumnos\Bu
 C:\Users\santi\Documents\GitHub\SistemaCISCODominio\src\main\java\DTO\alumnos\ConfirmarAlumnoDTO.java
 C:\Users\santi\Documents\GitHub\SistemaCISCODominio\src\main\java\DTO\centro\AgregarCentroDTO.java
 C:\Users\santi\Documents\GitHub\SistemaCISCODominio\src\main\java\DTO\centro\AgregarReglaDTO.java
-C:\Users\santi\Documents\GitHub\SistemaCISCODominio\src\main\java\DTO\centro\AsignarReglaCentroDTO.java
 C:\Users\santi\Documents\GitHub\SistemaCISCODominio\src\main\java\DTO\computadoras\ActualizarEstadoComputadoraDTO.java
 C:\Users\santi\Documents\GitHub\SistemaCISCODominio\src\main\java\DTO\computadoras\AgregarComputadoraDTO.java
 C:\Users\santi\Documents\GitHub\SistemaCISCODominio\src\main\java\DTO\computadoras\FiltroComputadoraDTO.java
+C:\Users\santi\Documents\GitHub\SistemaCISCODominio\src\main\java\DTO\reportes\ReporteCarrerasDTO.java
+C:\Users\santi\Documents\GitHub\SistemaCISCODominio\src\main\java\DTO\reportes\ReporteCentroDTO.java
 C:\Users\santi\Documents\GitHub\SistemaCISCODominio\src\main\java\DTO\reservas\FiltroReservaDTO.java
 C:\Users\santi\Documents\GitHub\SistemaCISCODominio\src\main\java\DTO\reservas\GuardarReservaDTO.java
 C:\Users\santi\Documents\GitHub\SistemaCISCODominio\src\main\java\DTO\software\AgregarSoftwareDTO.java
