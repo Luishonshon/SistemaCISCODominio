@@ -6,6 +6,7 @@ package Dominio;
 
 import java.io.Serializable;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -29,10 +30,10 @@ public class Reservacion implements Serializable {
     private Long id;
     
     @Column(name = "fechaInicio", nullable =  false)
-    private  LocalDate  fechaInicio;
+    private  LocalDateTime  fechaInicio;
     
     @Column(name = "fechaFin", nullable =  false)
-    private  LocalDate  fechaFin;
+    private  LocalDateTime  fechaFin;
     
     @ManyToOne
     @JoinColumn(name = "idAlumno")
@@ -50,22 +51,23 @@ public class Reservacion implements Serializable {
         this.id = id;
     }
 
-    public LocalDate getFechaInicio() {
+    public LocalDateTime getFechaInicio() {
         return fechaInicio;
     }
 
-    public void setFechaInicio(LocalDate fechaInicio) {
+    public void setFechaInicio(LocalDateTime fechaInicio) {
         this.fechaInicio = fechaInicio;
     }
 
-    public LocalDate getFechaFin() {
+    public LocalDateTime getFechaFin() {
         return fechaFin;
     }
 
-    public void setFechaFin(LocalDate fechaFin) {
+    public void setFechaFin(LocalDateTime fechaFin) {
         this.fechaFin = fechaFin;
     }
 
+  
     public Alumno getAlumno() {
         return alumno;
     }
