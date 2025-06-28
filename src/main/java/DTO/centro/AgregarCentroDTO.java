@@ -4,6 +4,7 @@
  */
 package DTO.centro;
 
+import Dominio.Plantel;
 import java.time.LocalDate;
 
 /**
@@ -18,12 +19,15 @@ public class AgregarCentroDTO {
     private LocalDate fechaInicio;
 
     private LocalDate fechaFin;
+    
+    private Plantel plantel;
 
-    public AgregarCentroDTO(String nombre, String contraseña, LocalDate fechaInicio, LocalDate fechaFin) {
+    public AgregarCentroDTO(String nombre, String contraseña, LocalDate fechaInicio, LocalDate fechaFin, Plantel plantel) {
         this.nombre = nombre;
         this.contraseña = contraseña;
         this.fechaInicio = fechaInicio;
         this.fechaFin = fechaFin;
+        this.plantel =plantel;
     }
 
     public String getNombre() {
@@ -40,6 +44,10 @@ public class AgregarCentroDTO {
 
     public LocalDate getFechaFin() {
         return fechaFin;
+    }
+
+    public Plantel getPlantel() {
+        return plantel;
     }
     
     
