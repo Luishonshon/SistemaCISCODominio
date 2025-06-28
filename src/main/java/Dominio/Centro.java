@@ -8,6 +8,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 
 /**
@@ -32,10 +34,22 @@ public class Centro implements Serializable {
 
     @Column(name = "fechaFin", nullable = false)
     private LocalDate fechaFin;
+    
+    @ManyToOne()
+    @JoinColumn(name = "idPlantel")
+    private Plantel plantel;
 
     @OneToMany(mappedBy = "centro")
     private List<Computadora> Computadoras;
 
+    public Plantel getPlantel() {
+        return plantel;
+    }
+
+    public void setPlantel(Plantel plantel) {
+        this.plantel = plantel;
+    }
+    
     public String getNombre() {
         return nombre;
     }
