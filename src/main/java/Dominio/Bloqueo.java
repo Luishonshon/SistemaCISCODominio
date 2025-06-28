@@ -34,7 +34,7 @@ public class Bloqueo implements Serializable {
     @Column(name = "fechaBloqueo", nullable =  false)
     private  LocalDate  fechaBloqueo;
     
-    @Column(name = "fechadDesbloqueo", nullable =  false)
+    @Column(name = "fechadDesbloqueo")
     private  LocalDate  fechaDesbloqueo;
     
     @ManyToOne
