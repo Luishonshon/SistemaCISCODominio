@@ -24,9 +24,6 @@ public class Regla implements Serializable {
     
     @Column(name = "nombre", length = 150 , nullable = false)
     private String descripcion;
-    
-    @OneToMany(mappedBy = "CentroRegla")
-    private List<CentroRegla> centros;
 
     public String getDescripcion() {
         return descripcion;
@@ -34,14 +31,6 @@ public class Regla implements Serializable {
 
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
-    }
-
-    public List<CentroRegla> getCentros() {
-        return centros;
-    }
-
-    public void setCentros(List<CentroRegla> centros) {
-        this.centros = centros;
     }
 
     public Long getId() {

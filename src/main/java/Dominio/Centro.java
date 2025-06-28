@@ -36,9 +36,6 @@ public class Centro implements Serializable {
     @OneToMany(mappedBy = "Computadora")
     private List<Computadora> Computadoras;
 
-    @OneToMany(mappedBy = "CentroRegla")
-    private List<CentroRegla> reglas;
-
     public String getNombre() {
         return nombre;
     }
@@ -77,14 +74,6 @@ public class Centro implements Serializable {
 
     public void setFechaFin(LocalDate fechaFin) {
         this.fechaFin = fechaFin;
-    }
-
-    public List<CentroRegla> getReglas() {
-        return reglas;
-    }
-
-    public void setReglas(List<CentroRegla> reglas) {
-        this.reglas = reglas;
     }
 
     public Long getId() {
