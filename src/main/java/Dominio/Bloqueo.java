@@ -45,6 +45,14 @@ public class Bloqueo implements Serializable {
         return motivo;
     }
 
+    public LocalDate getFechaDesbloqueo() {
+        return fechaDesbloqueo;
+    }
+
+    public void setFechaDesbloqueo(LocalDate fechaDesbloqueo) {
+        this.fechaDesbloqueo = fechaDesbloqueo;
+    }
+
     public void setMotivo(String motivo) {
         this.motivo = motivo;
     }
