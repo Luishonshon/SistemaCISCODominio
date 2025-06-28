@@ -24,7 +24,7 @@ public class Carrera implements Serializable {
      @Column(name = "telefono", length = 12 ,nullable = false)
      private String telefono;
      
-     @OneToMany(mappedBy = "cliente")
+     @OneToMany(mappedBy = "carrera")
      private List<Alumno> alumnos;
 
     public String getNombre() {

@@ -30,7 +30,7 @@ public class Software implements Serializable {
     @Column(name = "nombre", length = 50 , nullable = false)
     private String nombre;
     
-    @OneToMany(mappedBy = "Instalacion")
+    @OneToMany(mappedBy = "software")
     private List<Instalacion> Instalaciones;
     
     public Long getId() {

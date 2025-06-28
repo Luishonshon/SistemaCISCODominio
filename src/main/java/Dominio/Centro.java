@@ -33,7 +33,7 @@ public class Centro implements Serializable {
     @Column(name = "fechaFin", nullable = false)
     private LocalDate fechaFin;
 
-    @OneToMany(mappedBy = "Computadora")
+    @OneToMany(mappedBy = "centro")
     private List<Computadora> Computadoras;
 
     public String getNombre() {

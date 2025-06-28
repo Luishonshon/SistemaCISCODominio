@@ -39,10 +39,10 @@ public class Computadora implements Serializable {
     @Column(name = "estado", nullable =  false)
     private boolean estado;
     
-    @OneToMany(mappedBy = "Reservacion")
+    @OneToMany(mappedBy = "computadora")
     private List<Reservacion> reservaciones;
     
-    @OneToMany(mappedBy = "Instalacion")
+    @OneToMany(mappedBy = "computadora")
     private List<Instalacion> Instalaciones;
     
     @ManyToOne()

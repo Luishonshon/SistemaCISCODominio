@@ -45,10 +45,10 @@ public class Alumno implements Serializable {
     @JoinColumn(name = "idCarrera")
     private Carrera carrera;
     
-    @OneToMany(mappedBy = "Bloqueo")
+    @OneToMany(mappedBy = "alumno")
     private List<Bloqueo> bloqueos;
     
-    @OneToMany(mappedBy = "Reservacion")
+    @OneToMany(mappedBy = "alumno")
     private List<Reservacion> reservaciones;
 
     public List<Reservacion> getReservaciones() {
