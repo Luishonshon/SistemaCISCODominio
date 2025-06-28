@@ -2,6 +2,7 @@ package Dominio;
 
 import java.io.Serializable;
 import java.time.LocalDate;
+import java.time.LocalTime;
 import java.util.List;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -29,11 +30,11 @@ public class Centro implements Serializable {
     @Column(name = "contrasenia", length = 100, nullable = false)
     private String contrasenia;
 
-    @Column(name = "fechaInicio", nullable = false)
-    private LocalDate fechaInicio;
+    @Column(name = "tiempoInicio", nullable = false)
+    private LocalTime tiempoInicio;
 
-    @Column(name = "fechaFin", nullable = false)
-    private LocalDate fechaFin;
+    @Column(name = "tiempoFin", nullable = false)
+    private LocalTime fechaFin;
     
     @ManyToOne()
     @JoinColumn(name = "idPlantel")
@@ -74,21 +75,23 @@ public class Centro implements Serializable {
         this.contrasenia = contrasenia;
     }
 
-    public LocalDate getFechaInicio() {
-        return fechaInicio;
+    public LocalTime getTiempoInicio() {
+        return tiempoInicio;
     }
 
-    public void setFechaInicio(LocalDate fechaInicio) {
-        this.fechaInicio = fechaInicio;
+    public void setTiempoInicio(LocalTime tiempoInicio) {
+        this.tiempoInicio = tiempoInicio;
     }
 
-    public LocalDate getFechaFin() {
+    public LocalTime getFechaFin() {
         return fechaFin;
     }
 
-    public void setFechaFin(LocalDate fechaFin) {
+    public void setFechaFin(LocalTime fechaFin) {
         this.fechaFin = fechaFin;
     }
+
+  
 
     public Long getId() {
         return id;
