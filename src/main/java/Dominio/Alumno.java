@@ -18,7 +18,7 @@ import javax.persistence.Table;
  * @author LABCISCO-PC036
  */
 @Entity
-@Table(name = "Carreras")
+@Table(name = "Alumnos")
 public class Alumno implements Serializable {
 
    
