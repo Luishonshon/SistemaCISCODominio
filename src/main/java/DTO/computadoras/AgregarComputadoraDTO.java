@@ -11,7 +11,6 @@ import Dominio.Centro;
  * @author santi
  */
 public class AgregarComputadoraDTO {
-    private Long id;
     
     private int numero;
         
@@ -21,17 +20,13 @@ public class AgregarComputadoraDTO {
     
     private Centro centro;    
 
-    public AgregarComputadoraDTO(Long id, int numero, String ip, boolean estado, Centro centro) {
-        this.id = id;
+    public AgregarComputadoraDTO(int numero, String ip, boolean estado, Centro centro) {
         this.numero = numero;
         this.ip = ip;
         this.estado = estado;
         this.centro = centro;
     }
 
-    public Long getId() {
-        return id;
-    }
 
     public int getNumero() {
         return numero;
