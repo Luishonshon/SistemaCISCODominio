@@ -34,6 +34,9 @@ public class Bloqueo implements Serializable {
     @Column(name = "fechaBloqueo", nullable =  false)
     private  LocalDate  fechaBloqueo;
     
+    @Column(name = "fechadDesbloqueo", nullable =  false)
+    private  LocalDate  fechaDesbloqueo;
+    
     @ManyToOne
     @JoinColumn(name = "idAlumno")
     private Alumno alumno;

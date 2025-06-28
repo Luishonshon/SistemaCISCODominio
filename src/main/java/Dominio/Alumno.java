@@ -35,8 +35,8 @@ public class Alumno implements Serializable {
     @Column(name = "apellidoMaterno", length = 50 , nullable = false)
     private String apellidoMaterno;
     
-    @Column(name = "contraseña", length = 100 , nullable = false)
-    private String contraseña;
+    @Column(name = "contrasenia", length = 100 , nullable = false)
+    private String contrasenia;
     
     @Column(name = "estado",  nullable = false)
     private  boolean estado;
@@ -83,12 +83,12 @@ public class Alumno implements Serializable {
         this.apellidoMaterno = apellidoMaterno;
     }
     
-        public String getContraseña() {
-        return contraseña;
+        public String getContrasenia() {
+        return contrasenia;
     }
 
-    public void setContraseña(String contraseña) {
-        this.contraseña = contraseña;
+    public void setContrasenia(String contraseña) {
+        this.contrasenia = contraseña;
     }
 
     public boolean getEstado() {

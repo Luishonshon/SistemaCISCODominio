@@ -24,8 +24,8 @@ public class Centro implements Serializable {
     @Column(name = "nombre", nullable = false, length = 50)
     private String nombre;
 
-    @Column(name = "contraseña", length = 100, nullable = false)
-    private String contraseña;
+    @Column(name = "contrasenia", length = 100, nullable = false)
+    private String contrasenia;
 
     @Column(name = "fechaInicio", nullable = false)
     private LocalDate fechaInicio;
@@ -52,12 +52,12 @@ public class Centro implements Serializable {
         this.Computadoras = Computadoras;
     }
 
-    public String getContraseña() {
-        return contraseña;
+    public String getContrasenia() {
+        return contrasenia;
     }
 
-    public void setContraseña(String contrasenia) {
-        this.contraseña = contrasenia;
+    public void setContrasenia(String contrasenia) {
+        this.contrasenia = contrasenia;
     }
 
     public LocalDate getFechaInicio() {
