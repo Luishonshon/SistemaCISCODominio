@@ -4,8 +4,8 @@
  */
 package DTO.reportes;
 
-import Dominio.Carrera;
-import Dominio.Centro;
+import Dominio.CarreraDominio;
+import Dominio.CentroDominio;
 import java.time.LocalDate;
 
 /**
@@ -17,13 +17,13 @@ public class FiltroReporteCentro {
     private LocalDate fechaFin;
     private int offset = 0;
     private int limit = 10;
-    private Centro centro;
-    private Carrera carrera;
+    private CentroDominio centro;
+    private CarreraDominio carrera;
 
     public FiltroReporteCentro() {
     }
 
-    public FiltroReporteCentro(LocalDate fechaInicio, LocalDate fechaFin, int offset, int limit, Centro centro, Carrera carrera) {
+    public FiltroReporteCentro(LocalDate fechaInicio, LocalDate fechaFin, int offset, int limit, CentroDominio centro, CarreraDominio carrera) {
         this.fechaInicio = fechaInicio;
         this.fechaFin = fechaFin;
         this.offset = offset;
@@ -64,19 +64,19 @@ public class FiltroReporteCentro {
         this.limit = limit;
     }
 
-    public Centro getCentro() {
+    public CentroDominio getCentro() {
         return centro;
     }
 
-    public void setCentro(Centro centro) {
+    public void setCentro(CentroDominio centro) {
         this.centro = centro;
     }
 
-    public Carrera getCarrera() {
+    public CarreraDominio getCarrera() {
         return carrera;
     }
 
-    public void setCarrera(Carrera carrera) {
+    public void setCarrera(CarreraDominio carrera) {
         this.carrera = carrera;
     }
 }

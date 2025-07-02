@@ -4,8 +4,8 @@
  */
 package DTO.software;
 
-import Dominio.Computadora;
-import Dominio.Software;
+import Dominio.ComputadoraDominio;
+import Dominio.SoftwareDominio;
 
 /**
  *
@@ -14,11 +14,11 @@ import Dominio.Software;
 public class InstalarSoftwareDTO {
     private String version;
 
-    private Computadora computadora;
+    private ComputadoraDominio computadora;
  
-    private Software software;
+    private SoftwareDominio software;
 
-    public InstalarSoftwareDTO(String version, Computadora computadora, Software software) {
+    public InstalarSoftwareDTO(String version, ComputadoraDominio computadora, SoftwareDominio software) {
         this.version = version;
         this.computadora = computadora;
         this.software = software;
@@ -28,11 +28,11 @@ public class InstalarSoftwareDTO {
         return version;
     }
 
-    public Computadora getComputadora() {
+    public ComputadoraDominio getComputadora() {
         return computadora;
     }
 
-    public Software getSoftware() {
+    public SoftwareDominio getSoftware() {
         return software;
     }
     

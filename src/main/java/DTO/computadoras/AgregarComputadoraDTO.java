@@ -4,7 +4,7 @@
  */
 package DTO.computadoras;
 
-import Dominio.Centro;
+import Dominio.CentroDominio;
 
 /**
  *
@@ -18,9 +18,9 @@ public class AgregarComputadoraDTO {
     
     private boolean estado;
     
-    private Centro centro;    
+    private CentroDominio centro;    
 
-    public AgregarComputadoraDTO(int numero, String ip, boolean estado, Centro centro) {
+    public AgregarComputadoraDTO(int numero, String ip, boolean estado, CentroDominio centro) {
         this.numero = numero;
         this.ip = ip;
         this.estado = estado;
@@ -40,7 +40,7 @@ public class AgregarComputadoraDTO {
         return estado;
     }
 
-    public Centro getCentro() {
+    public CentroDominio getCentro() {
         return centro;
     }
     

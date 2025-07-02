@@ -2,21 +2,22 @@
 <persistence version="2.2" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence           http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
   <persistence-unit name="ConexionJPA" transaction-type="RESOURCE_LOCAL">
     <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
-    <class>Dominio.Alumno</class>
-    <class>Dominio.Bloqueo</class>
-    <class>Dominio.Carrera</class>
-    <class>Dominio.Centro</class>
-    <class>Dominio.Computadora</class>
-    <class>Dominio.Instalacion</class>
-    <class>Dominio.Regla</class>
-    <class>Dominio.Reservacion</class>
-    <class>Dominio.Software</class>
-    <class>Dominio.Plantel</class>
+    <class>Dominio.AlumnoDominio</class>
+    <class>Dominio.CarreraDominio</class>
+    <class>Dominio.ReglaDominio</class>
+    <class>Dominio.BloqueoDominio</class>
+    <class>Dominio.BloqueoReglaDominio</class>
+    <class>Dominio.CentroDominio</class>
+    <class>Dominio.LaboratorioDominio</class>
+    <class>Dominio.ComputadoraDominio</class>
+    <class>Dominio.SoftwareDominio</class>
+    <class>Dominio.ComputadoraSoftwareDominio</class>
+    <class>Dominio.AlumnoComputadoraDominio</class>
     <properties>
-      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/sistemaLaboratorios?zeroDateTimeBehavior=CONVERT_TO_NULL"/>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/centroComputoDB?zeroDateTimeBehavior=CONVERT_TO_NULL"/>
       <property name="javax.persistence.jdbc.user" value="root"/>
       <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
-      <property name="javax.persistence.jdbc.password" value="SanSanty03"/>
+      <property name="javax.persistence.jdbc.password" value="@Efj-300705/?"/>
       <property name="javax.persistence.schema-generation.database.action" value="create"/>
     </properties>
   </persistence-unit>

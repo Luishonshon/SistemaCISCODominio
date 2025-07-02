@@ -4,7 +4,7 @@
  */
 package DTO.alumnos;
 
-import Dominio.Alumno;
+import Dominio.AlumnoDominio;
 import java.time.LocalDate;
 
 /**
@@ -16,9 +16,9 @@ public class BloquearAlumnoDTO {
     
     private  LocalDate  fechaBloqueo;
     
-    private Alumno alumno;
+    private AlumnoDominio alumno;
 
-    public BloquearAlumnoDTO(String motivo, LocalDate fechaBloqueo, Alumno alumno) {
+    public BloquearAlumnoDTO(String motivo, LocalDate fechaBloqueo, AlumnoDominio alumno) {
         this.motivo = motivo;
         this.fechaBloqueo = fechaBloqueo;
         this.alumno = alumno;
@@ -32,7 +32,7 @@ public class BloquearAlumnoDTO {
         return fechaBloqueo;
     }
 
-    public Alumno getAlumno() {
+    public AlumnoDominio getAlumno() {
         return alumno;
     }
     

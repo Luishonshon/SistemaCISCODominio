@@ -4,7 +4,7 @@
  */
 package DTO.alumnos;
 
-import Dominio.Carrera;
+import Dominio.CarreraDominio;
 
 /**
  *
@@ -22,9 +22,9 @@ public class AgregarAlumnoDTO {
     
     private  boolean estado;
 
-    private Carrera carrera;
+    private CarreraDominio carrera;
 
-    public AgregarAlumnoDTO(String nombre, String apellidoPaterno, String apellidoMaterno, String contraseña, boolean estado, Carrera carrera) {
+    public AgregarAlumnoDTO(String nombre, String apellidoPaterno, String apellidoMaterno, String contraseña, boolean estado, CarreraDominio carrera) {
         this.nombre = nombre;
         this.apellidoPaterno = apellidoPaterno;
         this.apellidoMaterno = apellidoMaterno;
@@ -53,7 +53,7 @@ public class AgregarAlumnoDTO {
         return estado;
     }
 
-    public Carrera getCarrera() {
+    public CarreraDominio getCarrera() {
     return carrera;
     }
 

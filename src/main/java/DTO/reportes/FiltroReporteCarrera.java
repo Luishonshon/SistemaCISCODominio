@@ -4,7 +4,7 @@
  */
 package DTO.reportes;
 
-import Dominio.Carrera;
+import Dominio.CarreraDominio;
 import java.time.LocalDate;
 
 /**
@@ -16,9 +16,9 @@ public class FiltroReporteCarrera {
     private LocalDate fechaFin;
     private int offset;
     private int limit;
-    private Carrera carrera;
+    private CarreraDominio carrera;
 
-    public FiltroReporteCarrera(LocalDate fechaInicio, LocalDate fechaFin, int offset, int limit, Carrera carrera) {
+    public FiltroReporteCarrera(LocalDate fechaInicio, LocalDate fechaFin, int offset, int limit, CarreraDominio carrera) {
         this.fechaInicio = fechaInicio;
         this.fechaFin = fechaFin;
         this.offset = offset;
@@ -61,11 +61,11 @@ public class FiltroReporteCarrera {
         this.limit = limit;
     }
 
-    public Carrera getCarrera() {
+    public CarreraDominio getCarrera() {
         return carrera;
     }
 
-    public void setCarrera(Carrera carrera) {
+    public void setCarrera(CarreraDominio carrera) {
         this.carrera = carrera;
     }
     
