@@ -38,4 +38,65 @@ public class BloqueoReglaDominio implements Serializable {
     @ManyToOne(optional = false)
     @JoinColumn(name = "id_regla")
     private ReglaDominio regla;
+
+    /**
+     * constructor completo
+     * @param fechaBloqueo
+     * @param fechaDesbloqueo
+     * @param bloqueo
+     * @param regla 
+     */
+    public BloqueoReglaDominio(Date fechaBloqueo, Date fechaDesbloqueo, BloqueoDominio bloqueo, ReglaDominio regla) {
+        this.fechaBloqueo = fechaBloqueo;
+        this.fechaDesbloqueo = fechaDesbloqueo;
+        this.bloqueo = bloqueo;
+        this.regla = regla;
+    }
+    
+    /**
+     * constructor por ausencia
+     */
+    public BloqueoReglaDominio(){
+    
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Date getFechaBloqueo() {
+        return fechaBloqueo;
+    }
+
+    public void setFechaBloqueo(Date fechaBloqueo) {
+        this.fechaBloqueo = fechaBloqueo;
+    }
+
+    public Date getFechaDesbloqueo() {
+        return fechaDesbloqueo;
+    }
+
+    public void setFechaDesbloqueo(Date fechaDesbloqueo) {
+        this.fechaDesbloqueo = fechaDesbloqueo;
+    }
+
+    public BloqueoDominio getBloqueo() {
+        return bloqueo;
+    }
+
+    public void setBloqueo(BloqueoDominio bloqueo) {
+        this.bloqueo = bloqueo;
+    }
+
+    public ReglaDominio getRegla() {
+        return regla;
+    }
+
+    public void setRegla(ReglaDominio regla) {
+        this.regla = regla;
+    }
 }

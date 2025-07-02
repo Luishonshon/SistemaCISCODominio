@@ -34,4 +34,53 @@ public class BloqueoDominio implements Serializable {
     
     @OneToMany(mappedBy = "bloqueo" )
     private List<BloqueoReglaDominio> reglas;
+
+    /**
+     * constructor completo
+     * @param motivo
+     * @param alumno 
+     */
+    public BloqueoDominio(String motivo, AlumnoDominio alumno) {
+        this.motivo = motivo;
+        this.alumno = alumno;
+    }
+    
+    /**
+     * constructor por ausencia
+     */
+    public BloqueoDominio(){
+    
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getMotivo() {
+        return motivo;
+    }
+
+    public void setMotivo(String motivo) {
+        this.motivo = motivo;
+    }
+
+    public AlumnoDominio getAlumno() {
+        return alumno;
+    }
+
+    public void setAlumno(AlumnoDominio alumno) {
+        this.alumno = alumno;
+    }
+
+    public List<BloqueoReglaDominio> getReglas() {
+        return reglas;
+    }
+
+    public void setReglas(List<BloqueoReglaDominio> reglas) {
+        this.reglas = reglas;
+    }
 }

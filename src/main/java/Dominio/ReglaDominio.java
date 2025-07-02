@@ -26,4 +26,43 @@ public class ReglaDominio implements Serializable {
  
     @OneToMany(mappedBy = "regla")
     private List<BloqueoReglaDominio> bloqueos;
+    
+    /**
+     * constructor completo
+     * @param descripcion 
+     */
+    public ReglaDominio(String descripcion){
+        this.descripcion = descripcion;
+    }
+    
+    /**
+     * constructor por ausencia
+     */
+    public ReglaDominio(){
+    
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
+    public List<BloqueoReglaDominio> getBloqueos() {
+        return bloqueos;
+    }
+
+    public void setBloqueos(List<BloqueoReglaDominio> bloqueos) {
+        this.bloqueos = bloqueos;
+    }
 }

@@ -27,4 +27,35 @@ public class CentroDominio implements Serializable {
 
     @OneToMany(mappedBy = "centro")
     private List<LaboratorioDominio> laboratorios;
+
+    public CentroDominio(String nombre) {
+        this.nombre = nombre;
+    }
+    
+    public CentroDominio() {
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public List<LaboratorioDominio> getLaboratorios() {
+        return laboratorios;
+    }
+
+    public void setLaboratorios(List<LaboratorioDominio> laboratorios) {
+        this.laboratorios = laboratorios;
+    }
 }

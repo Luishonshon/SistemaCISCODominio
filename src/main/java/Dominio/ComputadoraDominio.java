@@ -31,7 +31,7 @@ public class ComputadoraDominio implements Serializable {
     @Column(name = "numero", length = 3, nullable =  false)
     private String numero;
     
-    @Column(name = "estaDisponible", nullable =  false)
+    @Column(name = "esta_disponible", nullable =  false)
     private boolean estaDisponible;
     
     @ManyToOne(optional = false)
@@ -43,4 +43,80 @@ public class ComputadoraDominio implements Serializable {
     
     @OneToMany(mappedBy = "computadora")
     private List<AlumnoComputadoraDominio> reservaciones;
+
+    /**
+     * constructor completo
+     * @param ip
+     * @param numero
+     * @param estaDisponible
+     * @param laboratorio 
+     */
+    public ComputadoraDominio(String ip, String numero, boolean estaDisponible, LaboratorioDominio laboratorio) {
+        this.ip = ip;
+        this.numero = numero;
+        this.estaDisponible = estaDisponible;
+        this.laboratorio = laboratorio;
+    }
+
+    /**
+     * constructor por ausencia
+     */
+    public ComputadoraDominio() {
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getIp() {
+        return ip;
+    }
+
+    public void setIp(String ip) {
+        this.ip = ip;
+    }
+
+    public String getNumero() {
+        return numero;
+    }
+
+    public void setNumero(String numero) {
+        this.numero = numero;
+    }
+
+    public boolean isEstaDisponible() {
+        return estaDisponible;
+    }
+
+    public void setEstaDisponible(boolean estaDisponible) {
+        this.estaDisponible = estaDisponible;
+    }
+
+    public LaboratorioDominio getLaboratorio() {
+        return laboratorio;
+    }
+
+    public void setLaboratorio(LaboratorioDominio laboratorio) {
+        this.laboratorio = laboratorio;
+    }
+
+    public List<ComputadoraSoftwareDominio> getSoftwares() {
+        return softwares;
+    }
+
+    public void setSoftwares(List<ComputadoraSoftwareDominio> softwares) {
+        this.softwares = softwares;
+    }
+
+    public List<AlumnoComputadoraDominio> getReservaciones() {
+        return reservaciones;
+    }
+
+    public void setReservaciones(List<AlumnoComputadoraDominio> reservaciones) {
+        this.reservaciones = reservaciones;
+    }
 }

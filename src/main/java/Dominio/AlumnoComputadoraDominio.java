@@ -2,7 +2,6 @@
 package Dominio;
 
 import java.io.Serializable;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -20,7 +19,7 @@ import javax.persistence.TemporalType;
  * @author erwbyel
  */
 @Entity
-@Table(name = "Reservaciones")
+@Table(name = "alumnos_computadoras")
 public class AlumnoComputadoraDominio implements Serializable {
     
     @Id
@@ -28,11 +27,11 @@ public class AlumnoComputadoraDominio implements Serializable {
     private Long id;
     
     @Temporal(TemporalType.TIMESTAMP)
-    @Column(name = "fechaInicio", nullable =  false)
+    @Column(name = "fecha_inicio", nullable =  false)
     private  LocalDateTime  fechaInicio;
     
     @Temporal(TemporalType.TIMESTAMP)
-    @Column(name = "fechaFin", nullable =  false)
+    @Column(name = "fecha_fin", nullable =  false)
     private  LocalDateTime  fechaFin;
     
     @ManyToOne(optional = false)
@@ -42,4 +41,54 @@ public class AlumnoComputadoraDominio implements Serializable {
     @ManyToOne(optional = false)
     @JoinColumn(name = "id_computadora")
     private ComputadoraDominio computadora;
+
+    public AlumnoComputadoraDominio(LocalDateTime fechaInicio, LocalDateTime fechaFin, AlumnoDominio alumno, ComputadoraDominio computadora) {
+        this.fechaInicio = fechaInicio;
+        this.fechaFin = fechaFin;
+        this.alumno = alumno;
+        this.computadora = computadora;
+    }
+
+    public AlumnoComputadoraDominio() {
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public LocalDateTime getFechaInicio() {
+        return fechaInicio;
+    }
+
+    public void setFechaInicio(LocalDateTime fechaInicio) {
+        this.fechaInicio = fechaInicio;
+    }
+
+    public LocalDateTime getFechaFin() {
+        return fechaFin;
+    }
+
+    public void setFechaFin(LocalDateTime fechaFin) {
+        this.fechaFin = fechaFin;
+    }
+
+    public AlumnoDominio getAlumno() {
+        return alumno;
+    }
+
+    public void setAlumno(AlumnoDominio alumno) {
+        this.alumno = alumno;
+    }
+
+    public ComputadoraDominio getComputadora() {
+        return computadora;
+    }
+
+    public void setComputadora(ComputadoraDominio computadora) {
+        this.computadora = computadora;
+    }
 }

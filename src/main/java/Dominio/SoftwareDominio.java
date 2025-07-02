@@ -31,4 +31,44 @@ public class SoftwareDominio implements Serializable {
     
     @OneToMany(mappedBy = "software")
     private List<ComputadoraSoftwareDominio> instalaciones;
+
+    public SoftwareDominio(String nombre, String version) {
+        this.nombre = nombre;
+        this.version = version;
+    }
+
+    public SoftwareDominio() {
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getVersion() {
+        return version;
+    }
+
+    public void setVersion(String version) {
+        this.version = version;
+    }
+
+    public List<ComputadoraSoftwareDominio> getInstalaciones() {
+        return instalaciones;
+    }
+
+    public void setInstalaciones(List<ComputadoraSoftwareDominio> instalaciones) {
+        this.instalaciones = instalaciones;
+    }
 }
