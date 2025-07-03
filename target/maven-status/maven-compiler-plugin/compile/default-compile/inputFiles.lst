@@ -10,10 +10,9 @@ C:\Users\angel\OneDrive\Escritorio\ProyectoBases2\SistemaCISCODominio\src\main\j
 C:\Users\angel\OneDrive\Escritorio\ProyectoBases2\SistemaCISCODominio\src\main\java\Dominio\ReglaDominio.java
 C:\Users\angel\OneDrive\Escritorio\ProyectoBases2\SistemaCISCODominio\src\main\java\Dominio\SoftwareDominio.java
 C:\Users\angel\OneDrive\Escritorio\ProyectoBases2\SistemaCISCODominio\src\main\java\DTO\alumnos\AgregarAlumnoDTO.java
-C:\Users\angel\OneDrive\Escritorio\ProyectoBases2\SistemaCISCODominio\src\main\java\DTO\alumnos\AgregarCarreraDTO.java
-C:\Users\angel\OneDrive\Escritorio\ProyectoBases2\SistemaCISCODominio\src\main\java\DTO\alumnos\BloquearAlumnoDTO.java
-C:\Users\angel\OneDrive\Escritorio\ProyectoBases2\SistemaCISCODominio\src\main\java\DTO\alumnos\BuscarAlumnoDTO.java
-C:\Users\angel\OneDrive\Escritorio\ProyectoBases2\SistemaCISCODominio\src\main\java\DTO\alumnos\ConfirmarAlumnoDTO.java
+C:\Users\angel\OneDrive\Escritorio\ProyectoBases2\SistemaCISCODominio\src\main\java\DTO\alumnos\FiltrosAlumnoDTO.java
+C:\Users\angel\OneDrive\Escritorio\ProyectoBases2\SistemaCISCODominio\src\main\java\DTO\bloqueos\BloquearAlumnoDTO.java
+C:\Users\angel\OneDrive\Escritorio\ProyectoBases2\SistemaCISCODominio\src\main\java\DTO\carreras\AgregarCarreraDTO.java
 C:\Users\angel\OneDrive\Escritorio\ProyectoBases2\SistemaCISCODominio\src\main\java\DTO\computadoras\ActualizarEstadoComputadoraDTO.java
 C:\Users\angel\OneDrive\Escritorio\ProyectoBases2\SistemaCISCODominio\src\main\java\DTO\computadoras\AgregarComputadoraDTO.java
 C:\Users\angel\OneDrive\Escritorio\ProyectoBases2\SistemaCISCODominio\src\main\java\DTO\computadoras\FiltroComputadoraDTO.java

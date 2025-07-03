@@ -1,9 +1,7 @@
 Dominio\ComputadoraSoftwareDominio.class
-DTO\alumnos\BloquearAlumnoDTO.class
 DTO\computadoras\AgregarComputadoraDTO.class
 Dominio\ComputadoraDominio.class
 Dominio\BloqueoReglaDominio.class
-DTO\alumnos\BuscarAlumnoDTO.class
 DTO\reservas\GuardarReservaDTO.class
 DTO\software\FiltroSoftwareDTO.class
 Dominio\AlumnoDominio.class
@@ -11,9 +9,12 @@ DTO\plantel\AgregarPlantelDTO.class
 DTO\reportes\FiltroReporteCarrera.class
 Dominio\BloqueoDominio.class
 DTO\alumnos\AgregarAlumnoDTO.class
+DTO\carreras\AgregarCarreraDTO.class
 DTO\software\InstalarSoftwareDTO.class
+DTO\bloqueos\BloquearAlumnoDTO.class
 Dominio\SoftwareDominio.class
 DTO\software\AgregarSoftwareDTO.class
+DTO\alumnos\FiltrosAlumnoDTO.class
 Dominio\ReglaDominio.class
 DTO\reportes\ReporteCentroDTO.class
 Dominio\CentroDominio.class
@@ -23,7 +24,5 @@ DTO\reportes\ReporteCarrerasDTO.class
 Dominio\AlumnoComputadoraDominio.class
 DTO\computadoras\ActualizarEstadoComputadoraDTO.class
 DTO\computadoras\FiltroComputadoraDTO.class
-DTO\alumnos\ConfirmarAlumnoDTO.class
-DTO\alumnos\AgregarCarreraDTO.class
 DTO\reservas\FiltroReservaDTO.class
 Dominio\LaboratorioDominio.class
