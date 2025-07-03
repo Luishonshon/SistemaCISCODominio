@@ -2,7 +2,7 @@
 package Dominio;
 
 import java.io.Serializable;
-import java.time.LocalDateTime;
+import java.util.Date;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -28,11 +28,11 @@ public class AlumnoComputadoraDominio implements Serializable {
     
     @Temporal(TemporalType.TIMESTAMP)
     @Column(name = "fecha_inicio", nullable =  false)
-    private  LocalDateTime  fechaInicio;
+    private Date fechaInicio;
     
     @Temporal(TemporalType.TIMESTAMP)
     @Column(name = "fecha_fin", nullable =  false)
-    private  LocalDateTime  fechaFin;
+    private Date fechaFin;
     
     @ManyToOne(optional = false)
     @JoinColumn(name = "id_alumno")
@@ -42,7 +42,7 @@ public class AlumnoComputadoraDominio implements Serializable {
     @JoinColumn(name = "id_computadora")
     private ComputadoraDominio computadora;
 
-    public AlumnoComputadoraDominio(LocalDateTime fechaInicio, LocalDateTime fechaFin, AlumnoDominio alumno, ComputadoraDominio computadora) {
+    public AlumnoComputadoraDominio(Date fechaInicio, Date fechaFin, AlumnoDominio alumno, ComputadoraDominio computadora) {
         this.fechaInicio = fechaInicio;
         this.fechaFin = fechaFin;
         this.alumno = alumno;
@@ -60,19 +60,19 @@ public class AlumnoComputadoraDominio implements Serializable {
         this.id = id;
     }
 
-    public LocalDateTime getFechaInicio() {
+    public Date getFechaInicio() {
         return fechaInicio;
     }
 
-    public void setFechaInicio(LocalDateTime fechaInicio) {
+    public void setFechaInicio(Date fechaInicio) {
         this.fechaInicio = fechaInicio;
     }
 
-    public LocalDateTime getFechaFin() {
+    public Date getFechaFin() {
         return fechaFin;
     }
 
-    public void setFechaFin(LocalDateTime fechaFin) {
+    public void setFechaFin(Date fechaFin) {
         this.fechaFin = fechaFin;
     }
 
@@ -91,4 +91,6 @@ public class AlumnoComputadoraDominio implements Serializable {
     public void setComputadora(ComputadoraDominio computadora) {
         this.computadora = computadora;
     }
+
+   
 }

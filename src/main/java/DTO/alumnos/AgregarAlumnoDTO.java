@@ -1,35 +1,25 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package DTO.alumnos;
 
 import Dominio.CarreraDominio;
 
 /**
- *
+ * clase dto que permite agregar un nuevo alumno
  * @author santi
  */
 public class AgregarAlumnoDTO {
-    
     private String nombre;
-   
     private String apellidoPaterno;
-    
     private String apellidoMaterno;
-    
     private String contraseña;
-    
-    private  boolean estado;
-
+    private boolean estaInscrito;
     private CarreraDominio carrera;
 
-    public AgregarAlumnoDTO(String nombre, String apellidoPaterno, String apellidoMaterno, String contraseña, boolean estado, CarreraDominio carrera) {
+    public AgregarAlumnoDTO(String nombre, String apellidoPaterno, String apellidoMaterno, String contraseña, boolean estaInscrito, CarreraDominio carrera) {
         this.nombre = nombre;
         this.apellidoPaterno = apellidoPaterno;
         this.apellidoMaterno = apellidoMaterno;
         this.contraseña = contraseña;
-        this.estado = estado;
+        this.estaInscrito = estaInscrito;
         this.carrera = carrera;
     }
 
@@ -49,14 +39,11 @@ public class AgregarAlumnoDTO {
         return contraseña;
     }
 
-    public boolean isEstado() {
-        return estado;
+    public boolean getEstaInscrito() {
+        return estaInscrito;
     }
 
     public CarreraDominio getCarrera() {
-    return carrera;
+        return carrera;
     }
-
-    
-    
 }
