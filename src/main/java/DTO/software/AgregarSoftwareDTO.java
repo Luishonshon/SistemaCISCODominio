@@ -1,5 +1,5 @@
 
-package DTO;
+package DTO.software;
 
 /**
  *
@@ -20,5 +20,13 @@ public class AgregarSoftwareDTO {
 
     public String getVersion() {
         return version;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setVersion(String version) {
+        this.version = version;
     }
 }

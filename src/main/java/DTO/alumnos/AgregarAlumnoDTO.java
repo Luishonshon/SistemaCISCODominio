@@ -46,4 +46,28 @@ public class AgregarAlumnoDTO {
     public CarreraDominio getCarrera() {
         return carrera;
     }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setApellidoPaterno(String apellidoPaterno) {
+        this.apellidoPaterno = apellidoPaterno;
+    }
+
+    public void setApellidoMaterno(String apellidoMaterno) {
+        this.apellidoMaterno = apellidoMaterno;
+    }
+
+    public void setContraseña(String contraseña) {
+        this.contraseña = contraseña;
+    }
+
+    public void setEstaInscrito(boolean estaInscrito) {
+        this.estaInscrito = estaInscrito;
+    }
+
+    public void setCarrera(CarreraDominio carrera) {
+        this.carrera = carrera;
+    }
 }

@@ -1,22 +1,25 @@
 
-package DTO.bloqueos;
+package DTO.alumnos_computadoras;
 
+import Dominio.ComputadoraDominio;
 import Dominio.AlumnoDominio;
 import java.util.Date;
 
 /**
- * clase dto para agregar bloqueo
- * @author erwbyel
+ *
+ * @author angel
  */
-public class AgregarBloqueoDTO {
+public class AgregarAlumnoComputadoraDTO {
     private Date fechaInicio;
     private Date fechaFin;
     private AlumnoDominio alumno;
+    private ComputadoraDominio computadora;
 
-    public AgregarBloqueoDTO(Date fechaInicio, Date fechaFin, AlumnoDominio alumno) {
+    public AgregarAlumnoComputadoraDTO(Date fechaInicio, Date fechaFin, AlumnoDominio alumno, ComputadoraDominio computadora) {
         this.fechaInicio = fechaInicio;
         this.fechaFin = fechaFin;
         this.alumno = alumno;
+        this.computadora = computadora;
     }
 
     public Date getFechaInicio() {
@@ -31,6 +34,10 @@ public class AgregarBloqueoDTO {
         return alumno;
     }
 
+    public ComputadoraDominio getComputadora() {
+        return computadora;
+    }
+
     public void setFechaInicio(Date fechaInicio) {
         this.fechaInicio = fechaInicio;
     }
@@ -41,5 +48,9 @@ public class AgregarBloqueoDTO {
 
     public void setAlumno(AlumnoDominio alumno) {
         this.alumno = alumno;
+    }
+
+    public void setComputadora(ComputadoraDominio computadora) {
+        this.computadora = computadora;
     }
 }

@@ -27,4 +27,16 @@ public class AgregarCarreraDTO {
     public Integer getTiempoLimite() {
         return tiempoLimite;
     }    
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
+    }
+
+    public void setTiempoLimite(Integer tiempoLimite) {
+        this.tiempoLimite = tiempoLimite;
+    }
 }

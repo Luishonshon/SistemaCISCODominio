@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package DTO.computadoras;
 
 import Dominio.CentroDominio;
@@ -13,11 +10,8 @@ import Dominio.CentroDominio;
 public class AgregarComputadoraDTO {
     
     private int numero;
-        
     private String ip;
-    
     private boolean estado;
-    
     private CentroDominio centro;    
 
     public AgregarComputadoraDTO(int numero, String ip, boolean estado, CentroDominio centro) {
@@ -26,7 +20,6 @@ public class AgregarComputadoraDTO {
         this.estado = estado;
         this.centro = centro;
     }
-
 
     public int getNumero() {
         return numero;
@@ -43,6 +36,20 @@ public class AgregarComputadoraDTO {
     public CentroDominio getCentro() {
         return centro;
     }
-    
-    
+
+    public void setNumero(int numero) {
+        this.numero = numero;
+    }
+
+    public void setIp(String ip) {
+        this.ip = ip;
+    }
+
+    public void setEstado(boolean estado) {
+        this.estado = estado;
+    }
+
+    public void setCentro(CentroDominio centro) {
+        this.centro = centro;
+    }
 }
