@@ -22,7 +22,7 @@ import javax.persistence.Table;
 public class LaboratorioDominio implements Serializable {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(name = "hora_apertura", nullable = false)

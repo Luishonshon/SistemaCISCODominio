@@ -2,7 +2,7 @@
 package Dominio;
 
 import java.io.Serializable;
-import java.util.Date;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -10,8 +10,6 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
 
 /**
  * clase que modela la tabla intermedia Bloqueo - Regla
@@ -22,14 +20,11 @@ import javax.persistence.TemporalType;
 public class BloqueoReglaDominio implements Serializable {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     
-    @Temporal(TemporalType.TIMESTAMP)
-    private Date fechaBloqueo;
-    
-    @Temporal(TemporalType.TIMESTAMP)
-    private Date fechaDesbloqueo;
+    @Column(name = "motivo", length = 300, nullable = false)
+    private String motivo;
     
     @ManyToOne(optional = false)
     @JoinColumn(name = "id_bloqueo")
@@ -41,14 +36,12 @@ public class BloqueoReglaDominio implements Serializable {
 
     /**
      * constructor completo
-     * @param fechaBloqueo
-     * @param fechaDesbloqueo
+     * @param motivo
      * @param bloqueo
      * @param regla 
      */
-    public BloqueoReglaDominio(Date fechaBloqueo, Date fechaDesbloqueo, BloqueoDominio bloqueo, ReglaDominio regla) {
-        this.fechaBloqueo = fechaBloqueo;
-        this.fechaDesbloqueo = fechaDesbloqueo;
+    public BloqueoReglaDominio(String motivo, BloqueoDominio bloqueo, ReglaDominio regla) {
+        this.motivo = motivo;
         this.bloqueo = bloqueo;
         this.regla = regla;
     }
@@ -68,22 +61,14 @@ public class BloqueoReglaDominio implements Serializable {
         this.id = id;
     }
 
-    public Date getFechaBloqueo() {
-        return fechaBloqueo;
+    public String getMotivo() {
+        return motivo;
     }
 
-    public void setFechaBloqueo(Date fechaBloqueo) {
-        this.fechaBloqueo = fechaBloqueo;
+    public void setMotivo(String motivo) {
+        this.motivo = motivo;
     }
-
-    public Date getFechaDesbloqueo() {
-        return fechaDesbloqueo;
-    }
-
-    public void setFechaDesbloqueo(Date fechaDesbloqueo) {
-        this.fechaDesbloqueo = fechaDesbloqueo;
-    }
-
+    
     public BloqueoDominio getBloqueo() {
         return bloqueo;
     }
