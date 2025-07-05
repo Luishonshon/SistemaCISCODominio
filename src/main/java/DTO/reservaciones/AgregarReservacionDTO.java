@@ -1,5 +1,5 @@
 
-package DTO.alumnos_computadoras;
+package DTO.reservaciones;
 
 import Dominio.ComputadoraDominio;
 import Dominio.AlumnoDominio;
@@ -9,13 +9,13 @@ import java.util.Date;
  *
  * @author angel
  */
-public class AgregarAlumnoComputadoraDTO {
+public class AgregarReservacionDTO {
     private Date fechaInicio;
     private Date fechaFin;
     private AlumnoDominio alumno;
     private ComputadoraDominio computadora;
 
-    public AgregarAlumnoComputadoraDTO(Date fechaInicio, Date fechaFin, AlumnoDominio alumno, ComputadoraDominio computadora) {
+    public AgregarReservacionDTO(Date fechaInicio, Date fechaFin, AlumnoDominio alumno, ComputadoraDominio computadora) {
         this.fechaInicio = fechaInicio;
         this.fechaFin = fechaFin;
         this.alumno = alumno;

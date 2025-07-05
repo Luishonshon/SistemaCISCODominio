@@ -1,5 +1,5 @@
 
-package DTO.computadoras_software;
+package DTO.instalaciones;
 
 import Dominio.ComputadoraDominio;
 import Dominio.SoftwareDominio;
@@ -8,11 +8,11 @@ import Dominio.SoftwareDominio;
  *
  * @author angel
  */
-public class AgregarComputadoraSoftwareDTO {
+public class AgregarInstalacionDTO {
     private ComputadoraDominio computadora;
     private SoftwareDominio software;
 
-    public AgregarComputadoraSoftwareDTO(ComputadoraDominio computadora, SoftwareDominio software) {
+    public AgregarInstalacionDTO(ComputadoraDominio computadora, SoftwareDominio software) {
         this.computadora = computadora;
         this.software = software;
     }

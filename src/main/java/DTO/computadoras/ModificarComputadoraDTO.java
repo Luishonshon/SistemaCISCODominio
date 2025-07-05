@@ -4,7 +4,7 @@ package DTO.computadoras;
  *
  * @author luishonshon
  */
-public class ActualizarEstadoComputadoraDTO {
+public class ModificarComputadoraDTO {
     private long idComputadora;
     private String estadoNuevo;
 
