@@ -6,13 +6,12 @@
     <class>Dominio.CarreraDominio</class>
     <class>Dominio.ReglaDominio</class>
     <class>Dominio.BloqueoDominio</class>
-    <class>Dominio.BloqueoReglaDominio</class>
     <class>Dominio.CentroDominio</class>
     <class>Dominio.LaboratorioDominio</class>
     <class>Dominio.ComputadoraDominio</class>
     <class>Dominio.SoftwareDominio</class>
-    <class>Dominio.ComputadoraSoftwareDominio</class>
-    <class>Dominio.AlumnoComputadoraDominio</class>
+    <class>Dominio.ReservacionDominio</class>
+    <class>Dominio.InstalacionDominio</class>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/centrocomputodb?zeroDateTimeBehavior=CONVERT_TO_NULL"/>
       <property name="javax.persistence.jdbc.user" value="root"/>
