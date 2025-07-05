@@ -46,7 +46,7 @@ public class AlumnoDominio implements Serializable {
     private List<BloqueoDominio> bloqueos;
     
     @OneToMany(mappedBy = "alumno")
-    private List<AlumnoComputadoraDominio> reservaciones;
+    private List<ReservacionDominio> reservaciones;
 
     /**
      * constructor total
@@ -136,11 +136,11 @@ public class AlumnoDominio implements Serializable {
         this.bloqueos = bloqueos;
     }
 
-    public List<AlumnoComputadoraDominio> getReservaciones() {
+    public List<ReservacionDominio> getReservaciones() {
         return reservaciones;
     }
 
-    public void setReservaciones(List<AlumnoComputadoraDominio> reservaciones) {
+    public void setReservaciones(List<ReservacionDominio> reservaciones) {
         this.reservaciones = reservaciones;
     }   
 }

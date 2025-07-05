@@ -3,13 +3,13 @@ package Dominio;
 import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -33,23 +33,29 @@ public class BloqueoDominio implements Serializable {
     @Temporal(TemporalType.TIMESTAMP)
     private Date fechaDesbloqueo;
 
+    @Column(name = "motivo", length = 300, nullable = false)
+    private String motivo;
+
     @ManyToOne(optional = false)
     @JoinColumn(name = "id_alumno")
     private AlumnoDominio alumno;
 
-    @OneToMany(mappedBy = "bloqueo")
-    private List<BloqueoReglaDominio> reglas;
+    @ManyToOne(optional = false)
+    @JoinColumn(name = "id_regla")
+    private ReglaDominio regla;
 
     /**
      * constructor completo
      *
      * @param fechaBloqueo
      * @param fechaDesbloqueo
+     * @param motivo
      * @param alumno
      */
-    public BloqueoDominio(Date fechaBloqueo, Date fechaDesbloqueo, AlumnoDominio alumno) {
+    public BloqueoDominio(Date fechaBloqueo, Date fechaDesbloqueo, String motivo ,AlumnoDominio alumno) {
         this.fechaBloqueo = fechaBloqueo;
         this.fechaDesbloqueo = fechaBloqueo;
+        this.motivo = motivo;
         this.alumno = alumno;
     }
 
@@ -83,7 +89,15 @@ public class BloqueoDominio implements Serializable {
     public void setFechaDesbloqueo(Date fechaDesbloqueo) {
         this.fechaDesbloqueo = fechaDesbloqueo;
     }
-    
+
+    public String getMotivo() {
+        return motivo;
+    }
+
+    public void setMotivo(String motivo) {
+        this.motivo = motivo;
+    }
+
     public AlumnoDominio getAlumno() {
         return alumno;
     }
@@ -92,11 +106,11 @@ public class BloqueoDominio implements Serializable {
         this.alumno = alumno;
     }
 
-    public List<BloqueoReglaDominio> getReglas() {
-        return reglas;
+    public ReglaDominio getRegla() {
+        return regla;
     }
 
-    public void setReglas(List<BloqueoReglaDominio> reglas) {
-        this.reglas = reglas;
+    public void setRegla(ReglaDominio regla) {
+        this.regla = regla;
     }
 }

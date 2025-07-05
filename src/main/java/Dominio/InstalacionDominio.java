@@ -14,8 +14,8 @@ import javax.persistence.Table;
  * @author erwbyel
  */
 @Entity
-@Table(name = "computadoras_software")
-public class ComputadoraSoftwareDominio implements Serializable {
+@Table(name = "instalaciones")
+public class InstalacionDominio implements Serializable {
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -29,12 +29,12 @@ public class ComputadoraSoftwareDominio implements Serializable {
     @JoinColumn(name = "id_software")
     private SoftwareDominio software;
 
-    public ComputadoraSoftwareDominio(ComputadoraDominio computadora, SoftwareDominio software) {
+    public InstalacionDominio(ComputadoraDominio computadora, SoftwareDominio software) {
         this.computadora = computadora;
         this.software = software;
     }
 
-    public ComputadoraSoftwareDominio() {
+    public InstalacionDominio() {
     }
 
     public Long getId() {

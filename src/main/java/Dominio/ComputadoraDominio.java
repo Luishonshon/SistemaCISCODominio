@@ -39,10 +39,10 @@ public class ComputadoraDominio implements Serializable {
     private LaboratorioDominio laboratorio;
     
     @OneToMany(mappedBy = "computadora")
-    private List<ComputadoraSoftwareDominio> softwares;
+    private List<InstalacionDominio> softwares;
     
     @OneToMany(mappedBy = "computadora")
-    private List<AlumnoComputadoraDominio> reservaciones;
+    private List<ReservacionDominio> reservaciones;
 
     /**
      * constructor completo
@@ -104,19 +104,19 @@ public class ComputadoraDominio implements Serializable {
         this.laboratorio = laboratorio;
     }
 
-    public List<ComputadoraSoftwareDominio> getSoftwares() {
+    public List<InstalacionDominio> getSoftwares() {
         return softwares;
     }
 
-    public void setSoftwares(List<ComputadoraSoftwareDominio> softwares) {
+    public void setSoftwares(List<InstalacionDominio> softwares) {
         this.softwares = softwares;
     }
 
-    public List<AlumnoComputadoraDominio> getReservaciones() {
+    public List<ReservacionDominio> getReservaciones() {
         return reservaciones;
     }
 
-    public void setReservaciones(List<AlumnoComputadoraDominio> reservaciones) {
+    public void setReservaciones(List<ReservacionDominio> reservaciones) {
         this.reservaciones = reservaciones;
     }
 }

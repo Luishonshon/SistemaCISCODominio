@@ -30,7 +30,7 @@ public class SoftwareDominio implements Serializable {
     private String version;
     
     @OneToMany(mappedBy = "software")
-    private List<ComputadoraSoftwareDominio> instalaciones;
+    private List<InstalacionDominio> instalaciones;
 
     public SoftwareDominio(String nombre, String version) {
         this.nombre = nombre;
@@ -64,11 +64,11 @@ public class SoftwareDominio implements Serializable {
         this.version = version;
     }
 
-    public List<ComputadoraSoftwareDominio> getInstalaciones() {
+    public List<InstalacionDominio> getInstalaciones() {
         return instalaciones;
     }
 
-    public void setInstalaciones(List<ComputadoraSoftwareDominio> instalaciones) {
+    public void setInstalaciones(List<InstalacionDominio> instalaciones) {
         this.instalaciones = instalaciones;
     }
 }

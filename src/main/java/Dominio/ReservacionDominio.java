@@ -19,8 +19,8 @@ import javax.persistence.TemporalType;
  * @author erwbyel
  */
 @Entity
-@Table(name = "alumnos_computadoras")
-public class AlumnoComputadoraDominio implements Serializable {
+@Table(name = "reservaciones")
+public class ReservacionDominio implements Serializable {
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -42,14 +42,14 @@ public class AlumnoComputadoraDominio implements Serializable {
     @JoinColumn(name = "id_computadora")
     private ComputadoraDominio computadora;
 
-    public AlumnoComputadoraDominio(Date fechaInicio, Date fechaFin, AlumnoDominio alumno, ComputadoraDominio computadora) {
+    public ReservacionDominio(Date fechaInicio, Date fechaFin, AlumnoDominio alumno, ComputadoraDominio computadora) {
         this.fechaInicio = fechaInicio;
         this.fechaFin = fechaFin;
         this.alumno = alumno;
         this.computadora = computadora;
     }
 
-    public AlumnoComputadoraDominio() {
+    public ReservacionDominio() {
     }
 
     public Long getId() {
